@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CABINET</title>
+    <link rel="icon" type="image/svg+xml" href="./img/svg/favic.svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <script src="https://kit.fontawesome.com/ba79f67c41.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body4">
+    <header class="header">
+        <div class="container">
+            <div class="header__fill">
+                <a href="#!" class="header__logo">CABINET</a>
+                <nav class="header__nav1">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="catalog.html" class="header__nav-link">catalog</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="collections.html" class="header__nav-link">collections</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="giftcards.html" class="header__nav-link">gift cards</a>
+                        </li>
+                    </ul>   
+                </nav>     
+
+                <nav class="header__nav2">
+                    <ul class="header__nav2-list">
+                        <li class="header__nav2-item">
+                            <a href="cabinet.html" class="header__nav2-link">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="header__nav2-item">
+                            <a href="favourites.html" class="header__nav2-link">
+                                <i class="fa-regular fa-heart"></i>  
+                            </a>
+                        </li>
+                        <li class="header__nav2-item">
+                            <a href="#!" class="header__nav2-link">
+                                <i class="fa-solid fa-cart-shopping" id="cartIcon"></i>
+                                <div class="span__top">
+                                    <span class="cart-counter">0</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="header__nav_mobile">
+                    <input type="checkbox" id="check-menu">
+                    <label for="check-menu" class="menu-button"><img class="header__nav-button-img" src="img/svg/menu.svg" alt="menu">
+                    </label>
+                    <nav class="header__menu">
+                        <a href="index.html" id="menu" class="header__nav-link">home</a>
+                        <a href="catalog.html" id="menu" class="header__nav-link">catalog</a>
+                        <a href="collections.html" id="menu" class="header__nav-link">collections</a>
+                        <a href="giftcards.html" id="menu" class="header__nav-link">gift cards</a>
+                        <a href="favourites.html" id="menu" class="header__nav-link">favourites</a>
+                        <a href="#!" id="cartName" class="header__nav-link">basket</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="shopping__cart" id="shoppingCart">
+        <div class="container" id="container__cart">
+            <i class="fa-solid fa-xmark" id="xmark"></i>
+            <h6>ORDER</h6>     
+
+            <p id="isEmpty">The basket is empty</p>
+
+            <div class="backet__items">            
+            </div>
+            
+            <div class="cart__order_make">
+                <div class="plashka3"></div>
+                <p id="final__cost">Final cost: ... RUB</p>
+                <div class="button" id="order__btn">
+                    <button class="main__btn" onclick="location.href = 'cabinet.html'" >Make order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <main class="main">
+        <div class="container" id="signin">
+            <form class="sign_in" method="POST" action="#">
+                <h6>SIGN IN</h6>
+                <input type="text" id="login" name="login" placeholder="Enter login"  required>
+
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+                
+                <button type="submit" class="main__btn" id="main__btn2">
+                    <p class="main__btn-txt">login</p>
+                </button>
+
+                <div class="sign_in__a">
+                    <a href="" id="forPass">forget password</a>
+                    <a href="" style="color:rgb(0, 0, 0); text-decoration: underline;" id="signUp">sign up</a>  
+                </div>
+            </form>
+
+            <div class="overlay" id="overlay"></div>
+            <div class="signup-form" id="signupForm">
+                <div class="container" id="container__signup">
+                    <i class="fa-solid fa-xmark" id="xmark2"></i>
+                    <h6>SIGN UP</h6>
+                    <form class="form" method="POST" action="#">
+                        <div class="form2">
+                            <fieldset class="form__personal">
+                                <legend>Personal information</legend>
+                                <div class="name1">
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name" placeholder="Enter name"  required>
+                                </div>
+                                <div class="phone1">
+                                    <label for="phone">Phone:</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter phone" pattern="\+79[0-9]{9}|8[0-9]{10}" required>
+                                </div>
+                                <div class="email1">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter email" required>
+                                </div>
+                                <div class="password1">
+                                    <label for="password">Password:</label>
+                                    <input type="password" id="password2" name="password" placeholder="Enter password" required>
+                                </div>
+                                <div class="gender1">
+                                    <label>Gender:</label>
+                                    <input type="radio" id="option1" name="option" value="option1" checked>
+                                    <label for="option">Male</label>
+            
+                                    <input type="radio" id="option2" name="option" value="option2">
+                                    <label for="option">Female</label> 
+                                </div>                 
+                            </fieldset>
+        
+                            <fieldset>
+                                <legend>Subscription</legend>
+                                <label>Select categories:</label>
+                                
+                                <input type="checkbox" id="news" name="category[]" value="news">
+                                <label for="news">news</label>
+                                
+                                <input type="checkbox" id="sales" name="category[]" value="sales">
+                                <label for="sales">sales</label>
+                            </fieldset>
+                        </div>
+
+                        <button type="submit" class="main__btn">
+                            <p class="main__btn-txt">enter form</p>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="forget-pass" id="forgetPassForm">
+                <div class="container" id="container__signup">
+                    <i class="fa-solid fa-xmark" id="xmark3"></i>
+                    <h6>FORGET PASSWORD</h6>
+                    <form class="form" method="POST" action="#">
+                        <div class="form2">
+                            <fieldset class="form__personal2">
+                                <legend>Personal information</legend>
+                                <div class="phone1">
+                                    <label for="phone">Phone:</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter phone" pattern="\+79[0-9]{9}|8[0-9]{10}" required>
+                                </div>
+                                <div class="email1">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter email" required>
+                                </div>
+                                <div class="password1">
+                                    <label for="password">New password:</label>
+                                    <input type="password" id="password2" name="password" placeholder="Enter password" required>
+                                </div>         
+                            </fieldset>
+                        </div>
+
+                        <button type="submit" class="main__btn">
+                            <p class="main__btn-txt">change password</p>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./scripts/signUp.js"></script>
+    <script src="./scripts/bascket.js"></script>
+</body>
+</html>

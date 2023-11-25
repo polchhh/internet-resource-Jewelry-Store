@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFT CARDS</title>
+    <link rel="icon" type="image/svg+xml" href="./img/svg/favic.svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <script src="https://kit.fontawesome.com/ba79f67c41.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body3">
+    <header class="header">
+        <div class="container">
+            <div class="header__fill">
+                <a href="#!" class="header__logo">GIFT CARDS</a>
+                <nav class="header__nav1">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="catalog.html" class="header__nav-link">catalog</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="collections.html" class="header__nav-link">collections</a>
+                        </li>
+                    </ul>   
+                </nav>
+
+                <nav class="header__nav2">
+                    <ul class="header__nav2-list">
+                        <li class="header__nav2-item">
+                            <a href="cabinet.html" class="header__nav2-link">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="header__nav2-item">
+                            <a href="favourites.html" class="header__nav2-link">
+                                <i class="fa-regular fa-heart"></i>  
+                            </a>
+                        </li>
+                        <li class="header__nav2-item">
+                            <a href="#!" class="header__nav2-link">
+                                <i class="fa-solid fa-cart-shopping" id="cartIcon"></i>
+                                <div class="span__top">
+                                    <span class="cart-counter">0</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="header__nav_mobile">
+                    <input type="checkbox" id="check-menu">
+                    <label for="check-menu" class="menu-button"><img class="header__nav-button-img" src="img/svg/menu.svg" alt="menu">
+                    </label>
+                    <nav class="header__menu">
+                        <a href="index.html" id="menu" class="header__nav-link">home</a>
+                        <a href="catalog.html" id="menu" class="header__nav-link">catalog</a>
+                        <a href="collections.html" id="menu" class="header__nav-link">collections</a>
+                        <a href="cabinet.html" id="menu" class="header__nav-link">cabinet</a>
+                        <a href="favourites.html" id="menu" class="header__nav-link">favourites</a>
+                        <a href="#!" id="cartName" class="header__nav-link">basket</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="shopping__cart" id="shoppingCart">
+        <div class="container" id="container__cart">
+            <i class="fa-solid fa-xmark" id="xmark"></i>
+            <h6>ORDER</h6>     
+
+            <p id="isEmpty">The basket is empty</p>
+
+            <div class="backet__items">            
+            </div>
+            
+            <div class="cart__order_make">
+                <div class="plashka3"></div>
+                <p id="final__cost">Final cost: ... RUB</p>
+                <div class="button" id="order__btn">
+                    <button class="main__btn" onclick="location.href = 'cabinet.html'" >Make order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="container" id="gifts">
+            <div class="card" data-id="08"> 
+                <div class="circle">
+                    <h6 class="card__price">10 000 ₽</h6>
+                </div>
+                <div class="content">
+                    <p id="textpr">Choose from a selection of diamond jewelry pieces, including earrings, necklaces, and rings.</p>
+                    <a href="" class="card__price" data-cart2>buy</a>
+                </div>
+            </div>
+
+            <div class="card" data-id="09"> 
+                <div class="circle">
+                    <h6 class="card__price">50 000 ₽</h6>
+                </div>
+                <div class="content">
+                    <p id="textpr"></p>Explore mid-range diamond jewelry such as solitaire pendants, bracelets, and stud earrings.</p>
+                    <a href="" data-cart2>buy</a>
+                </div>
+            </div>
+            
+            <div class="card" data-id="10"> 
+                <div class="circle">
+                    <h6 class="card__price">100 000₽</h6>
+                </div>
+                <div class="content">
+                    <p id="textpr"></p>Indulge in luxurious diamond necklaces, engagement rings, and custom-designed jewelry.</p>
+                    <a href="" data-cart2>buy</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="plashka1"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__tailoring">
+                    <h6>TAILORING</h6>
+                    <p>You can also add jewelry with engraving and individual treatment, which will serve as an excellent addition to your gift. An individual personalized package is attached to each piece of jewelry</p>
+                </div>
+                <div class="footer__delivery">
+                    <h6>DELIVERY</h6>
+                    <p>We offer delivery of the order throughout Russia to an apartment or office. You can also pick up an order in one of our stores by prior request or personally select the product</p>
+                </div>
+                <div class="footer__conntacts">
+                    <h6>CONTACTS</h6>
+                    <p>Moscow, 111745,<br>Nagatinskaya 47
+                        <a href="mailto:granduer@diamond.ru" style="color:black">granduer@diamond.ru</a>
+                        <br><a href="tel:+7 (983) 731 - 03 -24" style="color:black">+7 (983) 731-03-24</a>
+                    </p>
+                </div>
+                <div class="footer__sn">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-vk"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>               
+        </div>
+    </footer>
+    <script src="./scripts/bascket.js"></script>
+</body>
+</html>
