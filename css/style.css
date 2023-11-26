@@ -678,7 +678,7 @@ section.gallery{
   display: flex;
   flex-direction: column;
   overflow-y: auto; /* Разрешаем прокрутку содержимого корзины */
-  max-height: 280px; /* Определяем максимальную высоту корзины */
+  max-height: 240px; /* Определяем максимальную высоту корзины */
   width: 100%;
 }
 
