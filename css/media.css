@@ -118,6 +118,10 @@
         max-width: 500px;
         max-height: 500px;
     }
+    .forget-pass{
+        max-width: 500px;
+        max-height: 500px;
+    }
 }
 
 @media (max-width: 525px) {
@@ -180,6 +184,10 @@
         max-height: 500px;
     }
     .signup-form{
+        max-width: 360px;
+        max-height: 500px;
+    }
+    .forget-pass{
         max-width: 360px;
         max-height: 500px;
     }
@@ -270,6 +278,10 @@
         max-height: 500px;
     }
     .signup-form{
+        max-width: 250px;
+        max-height: 500px;
+    }
+    .forget-pass{
         max-width: 250px;
         max-height: 500px;
     }
